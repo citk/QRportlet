@@ -7,28 +7,28 @@
 	xsi:schemaLocation="http://java.sun.com/xml/ns/portlet/portlet-app_2_0.xsd http://java.sun.com/xml/ns/portlet/portlet-app_2_0.xsd"
 >
 	<portlet>
-		<portlet-name>kunde</portlet-name>
-		<display-name>Kunde world</display-name>
-		<portlet-class>org.xmlportletfactory.example01.order.KundePortlet</portlet-class>
+		<portlet-name>person</portlet-name>
+		<display-name>Person QR</display-name>
+		<portlet-class>org.xmlportletfactory.tnsoft.qrperson.personPortlet</portlet-class>
 		<init-param>
 			<name>view-jsp</name>
-			<value>/JSPs/kunde/view.jsp</value>
+			<value>/JSPs/QRPerson/view.jsp</value>
 		</init-param>
 		<init-param>
 			<name>edit-jsp</name>
-			<value>/JSPs/kunde/edit.jsp</value>
+			<value>/JSPs/QRPerson/edit.jsp</value>
 		</init-param>
 		<init-param>
-			<name>edit-kunde-jsp</name>
-			<value>/JSPs/kunde/editkunde.jsp</value>
+			<name>edit-QRPerson-jsp</name>
+			<value>/JSPs/QRPerson/editQRPerson.jsp</value>
 		</init-param>
 		<init-param>
-			<name>view-kunde-jsp</name>
-			<value>/JSPs/kunde/viewkunde.jsp</value>
+			<name>view-QRPerson-jsp</name>
+			<value>/JSPs/QRPerson/viewQRPerson.jsp</value>
 		</init-param>
 		<init-param>
 			<name>help-jsp</name>
-			<value>/JSPs/kunde/help.jsp</value>
+			<value>/JSPs/QRPerson/help.jsp</value>
 		</init-param>
 		<expiration-cache>0</expiration-cache>
 		<supports>
@@ -39,9 +39,9 @@
 		</supports>
 		<resource-bundle>content.Language</resource-bundle>
 		<portlet-info>
-			<title>Kunde world</title>
-			<short-title>Kunde world</short-title>
-			<keywords>Kunde world</keywords>
+			<title>Person QR</title>
+			<short-title>Person QR</short-title>
+			<keywords>Person QR</keywords>
 		</portlet-info>
 		<!-- Portlet preferences (configurable by user in portlet EDIT mode) -->
 		<portlet-preferences>

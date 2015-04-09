@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <definition xmlns="http://www.xmlportletfactory.org/xml/xmlportletfactory" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.xmlportletfactory.org/xml/xmlportletfactory xmlportletfactory.xsd">
     <commonData>
-        <client>Example01</client>
-        <projectName>order</projectName>
+        <client>TNSoft</client>
+        <projectName>QRPerson</projectName>
         <version>1</version>
     </commonData>
     <applications>
-        <!-- kunde Portlet Class and File definition  -->
+        <!-- QRPerson Portlet Class and File definition  -->
         <application>
             <classDef>
-                <name>kunde</name>
-                <title>Kunde world</title>
+                <name>person</name>
+                <title>Person QR</title>
                 <restrictBy>
                     <userId>false</userId>
                 </restrictBy>
             </classDef>
             <fileDef>
-                <name>kunde</name>
+                <name>QRPerson</name>
                 <fields>
                     <field>
                         <name>kundeId</name>
@@ -31,8 +31,8 @@
                         <showFieldInView>false</showFieldInView>
                     </field>
                     <field>
-                        <name>kundeDescription</name>
-                        <title>kunde Description</title>
+                        <name>Firstname</name>
+                        <title>firstname</title>
                         <type>
                             <varchar>
                                 <length>100</length>
@@ -42,12 +42,33 @@
                         <required>true</required>
                     </field>
                     <field>
-                        <name>userKunde</name>
-                        <title>Name</title>
+                        <name>Middlename</name>
+                        <title>middlename</title>
                         <type>
                             <varchar>
-                                <length>30</length>
-                                <filter>true</filter>
+                                <length>100</length>
+                            </varchar>
+                        </type>
+                        <showFieldInView>true</showFieldInView>
+                        <required>false</required>
+                    </field>
+                    <field>
+                        <name>Lastname</name>
+                        <title>lastname</title>
+                        <type>
+                            <varchar>
+                                <length>100</length>
+                            </varchar>
+                        </type>
+                        <showFieldInView>true</showFieldInView>
+                        <required>true</required>
+                    </field>
+                    <field>
+                        <name>kundeDescription</name>
+                        <title>kunde Description</title>
+                        <type>
+                            <varchar>
+                                <length>100</length>
                             </varchar>
                         </type>
                         <showFieldInView>true</showFieldInView>
@@ -63,7 +84,7 @@
                         <required>false</required>
                     </field>
                     <field>
-                        <name>userCity</name>
+                        <name>City</name>
                         <title>City</title>
                         <type>
                             <varchar>

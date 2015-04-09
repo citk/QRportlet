@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/liferay-plugins-sdk-6.2.0/portlets/QRPerson-portlet/QRPerson-portlet.iml" filepath="$PROJECT_DIR$/liferay-plugins-sdk-6.2.0/portlets/QRPerson-portlet/QRPerson-portlet.iml" />
+      <module fileurl="file://$PROJECT_DIR$/liferay-plugins-sdk-6.2.0/XMLPortletFactory/QRPerson-xmlportletfactory/QRPerson-xmlportletfactory.iml" filepath="$PROJECT_DIR$/liferay-plugins-sdk-6.2.0/XMLPortletFactory/QRPerson-xmlportletfactory/QRPerson-xmlportletfactory.iml" />
       <module fileurl="file://$PROJECT_DIR$/liferay-plugins-sdk-6.2.0/portlets/order-portlet/order-portlet.iml" filepath="$PROJECT_DIR$/liferay-plugins-sdk-6.2.0/portlets/order-portlet/order-portlet.iml" />
     </modules>
   </component>

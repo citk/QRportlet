@@ -1,0 +1,22 @@
+<component name="libraryTable">
+  <library name="lib4">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/liferay-plugins-sdk-6.2.0/portlets/QRPerson-portlet/docroot/WEB-INF/lib/poi-3.7-20101029.jar!/" />
+      <root url="jar://$PROJECT_DIR$/liferay-plugins-sdk-6.2.0/portlets/QRPerson-portlet/docroot/WEB-INF/lib/util-bridges.jar!/" />
+      <root url="jar://$PROJECT_DIR$/liferay-plugins-sdk-6.2.0/portlets/QRPerson-portlet/docroot/WEB-INF/lib/poi-ooxml-schemas-3.7-20101029.jar!/" />
+      <root url="jar://$PROJECT_DIR$/liferay-plugins-sdk-6.2.0/portlets/QRPerson-portlet/docroot/WEB-INF/lib/commons-fileupload.jar!/" />
+      <root url="jar://$PROJECT_DIR$/liferay-plugins-sdk-6.2.0/portlets/QRPerson-portlet/docroot/WEB-INF/lib/poi-ooxml-3.7-20101029.jar!/" />
+      <root url="jar://$PROJECT_DIR$/liferay-plugins-sdk-6.2.0/portlets/QRPerson-portlet/docroot/WEB-INF/lib/jstl-impl.jar!/" />
+      <root url="jar://$PROJECT_DIR$/liferay-plugins-sdk-6.2.0/portlets/QRPerson-portlet/docroot/WEB-INF/lib/commons-logging.jar!/" />
+      <root url="jar://$PROJECT_DIR$/liferay-plugins-sdk-6.2.0/portlets/QRPerson-portlet/docroot/WEB-INF/lib/commons-beanutils.jar!/" />
+      <root url="jar://$PROJECT_DIR$/liferay-plugins-sdk-6.2.0/portlets/QRPerson-portlet/docroot/WEB-INF/lib/QRPerson-portlet-service.jar!/" />
+      <root url="jar://$PROJECT_DIR$/liferay-plugins-sdk-6.2.0/portlets/QRPerson-portlet/docroot/WEB-INF/lib/commons-io.jar!/" />
+      <root url="jar://$PROJECT_DIR$/liferay-plugins-sdk-6.2.0/portlets/QRPerson-portlet/docroot/WEB-INF/lib/jstl-api.jar!/" />
+      <root url="jar://$PROJECT_DIR$/liferay-plugins-sdk-6.2.0/portlets/QRPerson-portlet/docroot/WEB-INF/lib/util-java.jar!/" />
+      <root url="jar://$PROJECT_DIR$/liferay-plugins-sdk-6.2.0/portlets/QRPerson-portlet/docroot/WEB-INF/lib/log4j.jar!/" />
+      <root url="jar://$PROJECT_DIR$/liferay-plugins-sdk-6.2.0/portlets/QRPerson-portlet/docroot/WEB-INF/lib/util-taglib.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

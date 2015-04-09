@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE service-builder PUBLIC "-//Liferay//DTD Service Builder 6.2.0//EN" "http://www.liferay.com/dtd/liferay-service-builder_6_2_0.dtd">
+<service-builder package-path="org.xmlportletfactory.tnsoft.qrperson">
+	<author>Jack A. Rider</author>
+	<namespace>qrperson</namespace>
+	<entity name="person" local-service="true" remote-service="false" uuid="false" trash-enabled="false">
+		<!-- Primary key column -->
+		<column name="kundeId" type="long" primary="true" />
+
+		<!-- Foreign key columns -->
+		<column name="companyId" type="long" />
+		<column name="groupId" type="long" />
+		<column name="userId" type="long" />
+		<column name="userName" type="String" />
+		<column name="createDate" type="Date" />
+		<column name="modifiedDate" type="Date" />
+
+		<!-- Other columns -->
+		<column name="Firstname" type="String" />
+		<column name="Middlename" type="String" />
+		<column name="Lastname" type="String" />
+		<column name="kundeDescription" type="String" />
+		<column name="userDocument"  type="long" />
+		<column name="City" type="String" />
+		<column name="userEmail" type="String" />
+		<column name="folderDLId" type="long" />
+
+
+
+
+		<!-- Finder Methods Standard -->		
+		<finder name="GroupId" return-type="Collection">
+			<finder-column name="groupId" />
+		</finder>		
+		<finder name="UserIdGroupId" return-type="Collection">
+			<finder-column name="userId" />
+			<finder-column name="groupId" />
+		</finder>
+		<finder name="UserId" return-type="Collection">
+			<finder-column name="userId" />
+		</finder>
+		<finder name="CompanyId" return-type="Collection">
+			<finder-column name="companyId" />
+		</finder>
+		<!-- References -->	
+		<reference package-path="com.liferay.portlet.documentlibrary" entity="DLFolder" />
+	</entity>
+	<exceptions>
+		<exception>NoSuchperson</exception>
+	</exceptions>
+
+</service-builder>

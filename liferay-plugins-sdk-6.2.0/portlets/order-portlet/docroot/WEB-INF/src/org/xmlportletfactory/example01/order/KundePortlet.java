@@ -16,52 +16,36 @@
 
 package org.xmlportletfactory.example01.order;
 
-import java.io.File;
 import java.io.IOException;
 import java.io.OutputStream;
-import java.io.PrintWriter;
-import java.lang.reflect.InvocationTargetException;
-import java.lang.reflect.Method;
-import java.text.ParseException;
-import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Collections;
-import java.util.Calendar;
 import java.util.Date;
-import java.util.Enumeration;
 import java.util.List;
 import java.util.Locale;
 
 import javax.portlet.ActionRequest;
 import javax.portlet.ActionResponse;
-import javax.portlet.Event;
-import javax.portlet.EventRequest;
-import javax.portlet.EventResponse;
 import javax.portlet.PortletException;
 import javax.portlet.PortletPreferences;
 import javax.portlet.PortletRequestDispatcher;
 import javax.portlet.PortletURL;
 import javax.portlet.ProcessAction;
-import javax.portlet.ProcessEvent;
 import javax.portlet.RenderRequest;
 import javax.portlet.RenderResponse;
 import javax.portlet.ResourceRequest;
 import javax.portlet.ResourceResponse;
 import javax.portlet.PortletRequest;
 import javax.portlet.PortletConfig;
-import javax.xml.namespace.QName;
 
 import org.apache.commons.fileupload.FileItem;
 import org.apache.commons.fileupload.FileItemFactory;
 import org.apache.commons.fileupload.FileUploadException;
 import org.apache.commons.fileupload.disk.DiskFileItemFactory;
 import org.apache.commons.fileupload.portlet.PortletFileUpload;
-import org.apache.commons.beanutils.BeanComparator;
 import org.apache.poi.ss.usermodel.Workbook;
 import com.liferay.portal.kernel.servlet.HttpHeaders;
-
-import com.liferay.portal.kernel.dao.search.SearchContainer;
 
 import org.xmlportletfactory.example01.order.model.kunde;
 import org.xmlportletfactory.example01.order.model.impl.kundeImpl;
@@ -72,16 +56,7 @@ import org.xmlportletfactory.example01.order.service.permission.kundeEntryPermis
 
 import org.xmlportletfactory.example01.order.util.kundeUtil;
 
-import com.liferay.portal.kernel.dao.orm.Criterion;
-import com.liferay.portal.kernel.dao.orm.DynamicQuery;
-import com.liferay.portal.kernel.dao.orm.DynamicQueryFactoryUtil;
-import com.liferay.portal.kernel.dao.orm.PropertyFactoryUtil;
-import com.liferay.portal.kernel.dao.orm.RestrictionsFactoryUtil;
-import com.liferay.portal.kernel.exception.PortalException;
 import com.liferay.portal.kernel.exception.SystemException;
-import com.liferay.portal.kernel.json.JSONArray;
-import com.liferay.portal.kernel.json.JSONFactoryUtil;
-import com.liferay.portal.kernel.json.JSONObject;
 import com.liferay.portal.kernel.log.Log;
 import com.liferay.portal.kernel.log.LogFactoryUtil;
 import com.liferay.portal.kernel.servlet.SessionErrors;
@@ -99,27 +74,21 @@ import com.liferay.portal.kernel.util.GetterUtil;
 import com.liferay.portal.kernel.util.ParamUtil;
 import com.liferay.portal.kernel.util.Validator;
 import com.liferay.portal.kernel.util.WebKeys;
-import com.liferay.portal.model.User;
 import com.liferay.portal.security.permission.PermissionChecker;
 import com.liferay.portal.security.permission.ActionKeys;
 import com.liferay.portal.service.ServiceContext;
 import com.liferay.portal.service.ServiceContextFactory;
-import com.liferay.portal.service.UserLocalServiceUtil;
 import com.liferay.portal.theme.ThemeDisplay;
 import com.liferay.portal.util.PortalUtil;
 import com.liferay.portlet.PortalPreferences;
 import com.liferay.portlet.PortletPreferencesFactoryUtil;
-import com.liferay.portlet.documentlibrary.model.DLFileEntry;
-import com.liferay.portlet.documentlibrary.model.DLFolder;
-import com.liferay.portlet.documentlibrary.service.DLFileEntryLocalServiceUtil;
-import com.liferay.portlet.documentlibrary.service.DLFolderLocalServiceUtil;
 import com.liferay.util.bridges.mvc.MVCPortlet;
 
 
 /**
  * Portlet implementation class kunde
  */
-public class kundePortlet extends MVCPortlet {
+public class KundePortlet extends MVCPortlet {
 
 
 	private kundeUpload uploadManager;
@@ -720,6 +689,6 @@ public class kundePortlet extends MVCPortlet {
 	protected String viewJSP;
 	protected String viewkundeJSP;
 
-	private static Log _log = LogFactoryUtil.getLog(kundePortlet.class);
+	private static Log _log = LogFactoryUtil.getLog(KundePortlet.class);
 
 }
