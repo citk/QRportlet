@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="ext">
+    <CLASSES>
+      <root url="file://$USER_HOME$/Skrivebord/liferay-app/tomcat-7.0.42/lib/ext" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+    <jarDirectory url="file://$USER_HOME$/Skrivebord/liferay-app/tomcat-7.0.42/lib/ext" recursive="false" />
+  </library>
+</component>

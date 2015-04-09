@@ -21,22 +21,8 @@
     <orderEntry type="library" name="org.eclipse.jst.j2ee.internal.web.container" level="application" />
     <orderEntry type="library" name="org.eclipse.jst.j2ee.internal.module.container" level="application" />
     <orderEntry type="library" name="com.liferay.ide.eclipse.server.plugin.container/portlet" level="application" />
-    <orderEntry type="library" exported="" name="ext" level="project" />
-    <orderEntry type="library" exported="" name="order-portlet" level="project" />
     <orderEntry type="library" exported="" name="lib" level="project" />
+    <orderEntry type="library" exported="" name="ext" level="project" />
     <orderEntry type="library" exported="" name="lib1" level="project" />
-    <orderEntry type="module-library" exported="">
-      <library>
-        <CLASSES>
-          <root url="file://$MODULE_DIR$/../../../../../../liferay-app/tomcat-7.0.42/webapps/ROOT/WEB-INF/lib" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES>
-          <root url="file://$MODULE_DIR$/../../../../../../liferay-app/tomcat-7.0.42/webapps/ROOT/WEB-INF/lib" />
-        </SOURCES>
-        <jarDirectory url="file://$MODULE_DIR$/../../../../../../liferay-app/tomcat-7.0.42/webapps/ROOT/WEB-INF/lib" recursive="false" />
-        <jarDirectory url="file://$MODULE_DIR$/../../../../../../liferay-app/tomcat-7.0.42/webapps/ROOT/WEB-INF/lib" recursive="false" type="SOURCES" />
-      </library>
-    </orderEntry>
   </component>
 </module>
