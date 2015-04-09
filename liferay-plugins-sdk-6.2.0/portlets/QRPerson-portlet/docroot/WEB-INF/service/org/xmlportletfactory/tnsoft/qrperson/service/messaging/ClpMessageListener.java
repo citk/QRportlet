@@ -19,6 +19,7 @@ import com.liferay.portal.kernel.messaging.Message;
 
 import org.xmlportletfactory.tnsoft.qrperson.service.ClpSerializer;
 import org.xmlportletfactory.tnsoft.qrperson.service.personLocalServiceUtil;
+import org.xmlportletfactory.tnsoft.qrperson.service.personServiceUtil;
 
 /**
  * @author Jack A. Rider
@@ -36,6 +37,8 @@ public class ClpMessageListener extends BaseMessageListener {
 		if (command.equals("undeploy") &&
 				servletContextName.equals(getServletContextName())) {
 			personLocalServiceUtil.clearService();
+
+			personServiceUtil.clearService();
 		}
 	}
 }

@@ -295,6 +295,25 @@ public abstract class personLocalServiceBaseImpl extends BaseLocalServiceImpl
 	}
 
 	/**
+	 * Returns the person remote service.
+	 *
+	 * @return the person remote service
+	 */
+	public org.xmlportletfactory.tnsoft.qrperson.service.personService getpersonService() {
+		return personService;
+	}
+
+	/**
+	 * Sets the person remote service.
+	 *
+	 * @param personService the person remote service
+	 */
+	public void setpersonService(
+		org.xmlportletfactory.tnsoft.qrperson.service.personService personService) {
+		this.personService = personService;
+	}
+
+	/**
 	 * Returns the person persistence.
 	 *
 	 * @return the person persistence
@@ -546,6 +565,8 @@ public abstract class personLocalServiceBaseImpl extends BaseLocalServiceImpl
 
 	@BeanReference(type = org.xmlportletfactory.tnsoft.qrperson.service.personLocalService.class)
 	protected org.xmlportletfactory.tnsoft.qrperson.service.personLocalService personLocalService;
+	@BeanReference(type = org.xmlportletfactory.tnsoft.qrperson.service.personService.class)
+	protected org.xmlportletfactory.tnsoft.qrperson.service.personService personService;
 	@BeanReference(type = personPersistence.class)
 	protected personPersistence personPersistence;
 	@BeanReference(type = com.liferay.counter.service.CounterLocalService.class)

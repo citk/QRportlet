@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0"?>
 
 <deployment xmlns="http://xml.apache.org/axis/wsdd/" xmlns:java="http://xml.apache.org/axis/wsdd/providers/java">
 	<globalConfiguration>
@@ -32,4 +32,14 @@
 			<handler type="LocalResponder" />
 		</responseFlow>
 	</transport>
+	<service name="Plugin_qrperson_personService" provider="java:RPC" style="rpc" use="encoded">
+		<operation xmlns:operNS="urn:http.service.qrperson.tnsoft.xmlportletfactory.org" name="helloWorld" qname="operNS:helloWorld" soapAction=""> </operation>
+		<parameter name="allowedMethods" value="helloWorld" />
+		<parameter name="className" value="org.xmlportletfactory.tnsoft.qrperson.service.http.personServiceSoap" />
+		<parameter name="typeMappingVersion" value="1.2" />
+		<parameter name="wsdlPortType" value="personServiceSoap" />
+		<parameter name="wsdlServiceElement" value="personServiceSoapService" />
+		<parameter name="wsdlServicePort" value="Plugin_qrperson_personService" />
+		<parameter name="wsdlTargetNamespace" value="urn:http.service.qrperson.tnsoft.xmlportletfactory.org" />
+	</service>
 </deployment>

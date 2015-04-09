@@ -21,9 +21,10 @@ import java.util.Date;
 import java.util.List;
 
 /**
- * This class is used by SOAP remote services.
+ * This class is used by SOAP remote services, specifically {@link org.xmlportletfactory.tnsoft.qrperson.service.http.personServiceSoap}.
  *
  * @author Jack A. Rider
+ * @see org.xmlportletfactory.tnsoft.qrperson.service.http.personServiceSoap
  * @generated
  */
 public class personSoap implements Serializable {

@@ -106,140 +106,140 @@ public class personLocalServiceClpInvoker {
 				"org.xmlportletfactory.tnsoft.qrperson.model.person"
 			};
 
-		_methodName38 = "getBeanIdentifier";
+		_methodName40 = "getBeanIdentifier";
 
-		_methodParameterTypes38 = new String[] {  };
+		_methodParameterTypes40 = new String[] {  };
 
-		_methodName39 = "setBeanIdentifier";
+		_methodName41 = "setBeanIdentifier";
 
-		_methodParameterTypes39 = new String[] { "java.lang.String" };
+		_methodParameterTypes41 = new String[] { "java.lang.String" };
 
-		_methodName44 = "getCompanyEntries";
+		_methodName46 = "getCompanyEntries";
 
-		_methodParameterTypes44 = new String[] {
+		_methodParameterTypes46 = new String[] {
 				"long", "int", "int",
 				"com.liferay.portal.kernel.util.OrderByComparator"
 			};
 
-		_methodName45 = "getCompanyEntries";
+		_methodName47 = "getCompanyEntries";
 
-		_methodParameterTypes45 = new String[] { "long", "int", "int" };
+		_methodParameterTypes47 = new String[] { "long", "int", "int" };
 
-		_methodName46 = "getCompanyEntriesCount";
-
-		_methodParameterTypes46 = new String[] { "long" };
-
-		_methodName47 = "findAllInUser";
-
-		_methodParameterTypes47 = new String[] { "long" };
-
-		_methodName48 = "countAllInUser";
+		_methodName48 = "getCompanyEntriesCount";
 
 		_methodParameterTypes48 = new String[] { "long" };
 
 		_methodName49 = "findAllInUser";
 
-		_methodParameterTypes49 = new String[] {
+		_methodParameterTypes49 = new String[] { "long" };
+
+		_methodName50 = "countAllInUser";
+
+		_methodParameterTypes50 = new String[] { "long" };
+
+		_methodName51 = "findAllInUser";
+
+		_methodParameterTypes51 = new String[] {
 				"long", "com.liferay.portal.kernel.util.OrderByComparator"
 			};
 
-		_methodName50 = "findAllInUser";
+		_methodName52 = "findAllInUser";
 
-		_methodParameterTypes50 = new String[] {
+		_methodParameterTypes52 = new String[] {
 				"long", "int", "int",
 				"com.liferay.portal.kernel.util.OrderByComparator"
 			};
-
-		_methodName51 = "findAllInGroup";
-
-		_methodParameterTypes51 = new String[] { "long" };
-
-		_methodName52 = "countAllInGroup";
-
-		_methodParameterTypes52 = new String[] { "long" };
 
 		_methodName53 = "findAllInGroup";
 
-		_methodParameterTypes53 = new String[] {
+		_methodParameterTypes53 = new String[] { "long" };
+
+		_methodName54 = "countAllInGroup";
+
+		_methodParameterTypes54 = new String[] { "long" };
+
+		_methodName55 = "findAllInGroup";
+
+		_methodParameterTypes55 = new String[] {
 				"long", "com.liferay.portal.kernel.util.OrderByComparator"
 			};
 
-		_methodName54 = "findAllInGroup";
+		_methodName56 = "findAllInGroup";
 
-		_methodParameterTypes54 = new String[] {
+		_methodParameterTypes56 = new String[] {
 				"long", "int", "int",
 				"com.liferay.portal.kernel.util.OrderByComparator"
 			};
 
-		_methodName55 = "findAllInUserAndGroup";
-
-		_methodParameterTypes55 = new String[] { "long", "long" };
-
-		_methodName56 = "countAllInUserAndGroup";
-
-		_methodParameterTypes56 = new String[] { "long", "long" };
-
 		_methodName57 = "findAllInUserAndGroup";
 
-		_methodParameterTypes57 = new String[] {
+		_methodParameterTypes57 = new String[] { "long", "long" };
+
+		_methodName58 = "countAllInUserAndGroup";
+
+		_methodParameterTypes58 = new String[] { "long", "long" };
+
+		_methodName59 = "findAllInUserAndGroup";
+
+		_methodParameterTypes59 = new String[] {
 				"long", "long",
 				"com.liferay.portal.kernel.util.OrderByComparator"
 			};
 
-		_methodName58 = "findAllInUserAndGroup";
+		_methodName60 = "findAllInUserAndGroup";
 
-		_methodParameterTypes58 = new String[] {
+		_methodParameterTypes60 = new String[] {
 				"long", "long", "int", "int",
 				"com.liferay.portal.kernel.util.OrderByComparator"
 			};
 
-		_methodName59 = "addperson";
+		_methodName61 = "addperson";
 
-		_methodParameterTypes59 = new String[] {
+		_methodParameterTypes61 = new String[] {
 				"org.xmlportletfactory.tnsoft.qrperson.model.person",
 				"com.liferay.portal.service.ServiceContext"
 			};
 
-		_methodName60 = "updateperson";
-
-		_methodParameterTypes60 = new String[] {
-				"org.xmlportletfactory.tnsoft.qrperson.model.person",
-				"com.liferay.portal.service.ServiceContext"
-			};
-
-		_methodName62 = "deletepersonEntry";
+		_methodName62 = "updateperson";
 
 		_methodParameterTypes62 = new String[] {
-				"org.xmlportletfactory.tnsoft.qrperson.model.person"
+				"org.xmlportletfactory.tnsoft.qrperson.model.person",
+				"com.liferay.portal.service.ServiceContext"
 			};
 
-		_methodName63 = "addEntryResources";
-
-		_methodParameterTypes63 = new String[] {
-				"org.xmlportletfactory.tnsoft.qrperson.model.person", "boolean",
-				"boolean"
-			};
-
-		_methodName64 = "addEntryResources";
+		_methodName64 = "deletepersonEntry";
 
 		_methodParameterTypes64 = new String[] {
-				"org.xmlportletfactory.tnsoft.qrperson.model.person",
-				"java.lang.String[][]", "java.lang.String[][]"
+				"org.xmlportletfactory.tnsoft.qrperson.model.person"
 			};
 
 		_methodName65 = "addEntryResources";
 
-		_methodParameterTypes65 = new String[] { "long", "boolean", "boolean" };
+		_methodParameterTypes65 = new String[] {
+				"org.xmlportletfactory.tnsoft.qrperson.model.person", "boolean",
+				"boolean"
+			};
 
 		_methodName66 = "addEntryResources";
 
 		_methodParameterTypes66 = new String[] {
+				"org.xmlportletfactory.tnsoft.qrperson.model.person",
+				"java.lang.String[][]", "java.lang.String[][]"
+			};
+
+		_methodName67 = "addEntryResources";
+
+		_methodParameterTypes67 = new String[] { "long", "boolean", "boolean" };
+
+		_methodName68 = "addEntryResources";
+
+		_methodParameterTypes68 = new String[] {
 				"long", "java.lang.String[][]", "java.lang.String[][]"
 			};
 
-		_methodName67 = "updateEntryResources";
+		_methodName69 = "updateEntryResources";
 
-		_methodParameterTypes67 = new String[] {
+		_methodParameterTypes69 = new String[] {
 				"org.xmlportletfactory.tnsoft.qrperson.model.person",
 				"java.lang.String[][]", "java.lang.String[][]"
 			};
@@ -334,107 +334,107 @@ public class personLocalServiceClpInvoker {
 			return personLocalServiceUtil.updateperson((org.xmlportletfactory.tnsoft.qrperson.model.person)arguments[0]);
 		}
 
-		if (_methodName38.equals(name) &&
-				Arrays.deepEquals(_methodParameterTypes38, parameterTypes)) {
+		if (_methodName40.equals(name) &&
+				Arrays.deepEquals(_methodParameterTypes40, parameterTypes)) {
 			return personLocalServiceUtil.getBeanIdentifier();
 		}
 
-		if (_methodName39.equals(name) &&
-				Arrays.deepEquals(_methodParameterTypes39, parameterTypes)) {
+		if (_methodName41.equals(name) &&
+				Arrays.deepEquals(_methodParameterTypes41, parameterTypes)) {
 			personLocalServiceUtil.setBeanIdentifier((java.lang.String)arguments[0]);
 
 			return null;
 		}
 
-		if (_methodName44.equals(name) &&
-				Arrays.deepEquals(_methodParameterTypes44, parameterTypes)) {
+		if (_methodName46.equals(name) &&
+				Arrays.deepEquals(_methodParameterTypes46, parameterTypes)) {
 			return personLocalServiceUtil.getCompanyEntries(((Long)arguments[0]).longValue(),
 				((Integer)arguments[1]).intValue(),
 				((Integer)arguments[2]).intValue(),
 				(com.liferay.portal.kernel.util.OrderByComparator)arguments[3]);
 		}
 
-		if (_methodName45.equals(name) &&
-				Arrays.deepEquals(_methodParameterTypes45, parameterTypes)) {
+		if (_methodName47.equals(name) &&
+				Arrays.deepEquals(_methodParameterTypes47, parameterTypes)) {
 			return personLocalServiceUtil.getCompanyEntries(((Long)arguments[0]).longValue(),
 				((Integer)arguments[1]).intValue(),
 				((Integer)arguments[2]).intValue());
 		}
 
-		if (_methodName46.equals(name) &&
-				Arrays.deepEquals(_methodParameterTypes46, parameterTypes)) {
-			return personLocalServiceUtil.getCompanyEntriesCount(((Long)arguments[0]).longValue());
-		}
-
-		if (_methodName47.equals(name) &&
-				Arrays.deepEquals(_methodParameterTypes47, parameterTypes)) {
-			return personLocalServiceUtil.findAllInUser(((Long)arguments[0]).longValue());
-		}
-
 		if (_methodName48.equals(name) &&
 				Arrays.deepEquals(_methodParameterTypes48, parameterTypes)) {
-			return personLocalServiceUtil.countAllInUser(((Long)arguments[0]).longValue());
+			return personLocalServiceUtil.getCompanyEntriesCount(((Long)arguments[0]).longValue());
 		}
 
 		if (_methodName49.equals(name) &&
 				Arrays.deepEquals(_methodParameterTypes49, parameterTypes)) {
-			return personLocalServiceUtil.findAllInUser(((Long)arguments[0]).longValue(),
-				(com.liferay.portal.kernel.util.OrderByComparator)arguments[1]);
+			return personLocalServiceUtil.findAllInUser(((Long)arguments[0]).longValue());
 		}
 
 		if (_methodName50.equals(name) &&
 				Arrays.deepEquals(_methodParameterTypes50, parameterTypes)) {
+			return personLocalServiceUtil.countAllInUser(((Long)arguments[0]).longValue());
+		}
+
+		if (_methodName51.equals(name) &&
+				Arrays.deepEquals(_methodParameterTypes51, parameterTypes)) {
+			return personLocalServiceUtil.findAllInUser(((Long)arguments[0]).longValue(),
+				(com.liferay.portal.kernel.util.OrderByComparator)arguments[1]);
+		}
+
+		if (_methodName52.equals(name) &&
+				Arrays.deepEquals(_methodParameterTypes52, parameterTypes)) {
 			return personLocalServiceUtil.findAllInUser(((Long)arguments[0]).longValue(),
 				((Integer)arguments[1]).intValue(),
 				((Integer)arguments[2]).intValue(),
 				(com.liferay.portal.kernel.util.OrderByComparator)arguments[3]);
 		}
 
-		if (_methodName51.equals(name) &&
-				Arrays.deepEquals(_methodParameterTypes51, parameterTypes)) {
-			return personLocalServiceUtil.findAllInGroup(((Long)arguments[0]).longValue());
-		}
-
-		if (_methodName52.equals(name) &&
-				Arrays.deepEquals(_methodParameterTypes52, parameterTypes)) {
-			return personLocalServiceUtil.countAllInGroup(((Long)arguments[0]).longValue());
-		}
-
 		if (_methodName53.equals(name) &&
 				Arrays.deepEquals(_methodParameterTypes53, parameterTypes)) {
-			return personLocalServiceUtil.findAllInGroup(((Long)arguments[0]).longValue(),
-				(com.liferay.portal.kernel.util.OrderByComparator)arguments[1]);
+			return personLocalServiceUtil.findAllInGroup(((Long)arguments[0]).longValue());
 		}
 
 		if (_methodName54.equals(name) &&
 				Arrays.deepEquals(_methodParameterTypes54, parameterTypes)) {
-			return personLocalServiceUtil.findAllInGroup(((Long)arguments[0]).longValue(),
-				((Integer)arguments[1]).intValue(),
-				((Integer)arguments[2]).intValue(),
-				(com.liferay.portal.kernel.util.OrderByComparator)arguments[3]);
+			return personLocalServiceUtil.countAllInGroup(((Long)arguments[0]).longValue());
 		}
 
 		if (_methodName55.equals(name) &&
 				Arrays.deepEquals(_methodParameterTypes55, parameterTypes)) {
-			return personLocalServiceUtil.findAllInUserAndGroup(((Long)arguments[0]).longValue(),
-				((Long)arguments[1]).longValue());
+			return personLocalServiceUtil.findAllInGroup(((Long)arguments[0]).longValue(),
+				(com.liferay.portal.kernel.util.OrderByComparator)arguments[1]);
 		}
 
 		if (_methodName56.equals(name) &&
 				Arrays.deepEquals(_methodParameterTypes56, parameterTypes)) {
-			return personLocalServiceUtil.countAllInUserAndGroup(((Long)arguments[0]).longValue(),
-				((Long)arguments[1]).longValue());
+			return personLocalServiceUtil.findAllInGroup(((Long)arguments[0]).longValue(),
+				((Integer)arguments[1]).intValue(),
+				((Integer)arguments[2]).intValue(),
+				(com.liferay.portal.kernel.util.OrderByComparator)arguments[3]);
 		}
 
 		if (_methodName57.equals(name) &&
 				Arrays.deepEquals(_methodParameterTypes57, parameterTypes)) {
 			return personLocalServiceUtil.findAllInUserAndGroup(((Long)arguments[0]).longValue(),
-				((Long)arguments[1]).longValue(),
-				(com.liferay.portal.kernel.util.OrderByComparator)arguments[2]);
+				((Long)arguments[1]).longValue());
 		}
 
 		if (_methodName58.equals(name) &&
 				Arrays.deepEquals(_methodParameterTypes58, parameterTypes)) {
+			return personLocalServiceUtil.countAllInUserAndGroup(((Long)arguments[0]).longValue(),
+				((Long)arguments[1]).longValue());
+		}
+
+		if (_methodName59.equals(name) &&
+				Arrays.deepEquals(_methodParameterTypes59, parameterTypes)) {
+			return personLocalServiceUtil.findAllInUserAndGroup(((Long)arguments[0]).longValue(),
+				((Long)arguments[1]).longValue(),
+				(com.liferay.portal.kernel.util.OrderByComparator)arguments[2]);
+		}
+
+		if (_methodName60.equals(name) &&
+				Arrays.deepEquals(_methodParameterTypes60, parameterTypes)) {
 			return personLocalServiceUtil.findAllInUserAndGroup(((Long)arguments[0]).longValue(),
 				((Long)arguments[1]).longValue(),
 				((Integer)arguments[2]).intValue(),
@@ -442,46 +442,28 @@ public class personLocalServiceClpInvoker {
 				(com.liferay.portal.kernel.util.OrderByComparator)arguments[4]);
 		}
 
-		if (_methodName59.equals(name) &&
-				Arrays.deepEquals(_methodParameterTypes59, parameterTypes)) {
+		if (_methodName61.equals(name) &&
+				Arrays.deepEquals(_methodParameterTypes61, parameterTypes)) {
 			return personLocalServiceUtil.addperson((org.xmlportletfactory.tnsoft.qrperson.model.person)arguments[0],
-				(com.liferay.portal.service.ServiceContext)arguments[1]);
-		}
-
-		if (_methodName60.equals(name) &&
-				Arrays.deepEquals(_methodParameterTypes60, parameterTypes)) {
-			return personLocalServiceUtil.updateperson((org.xmlportletfactory.tnsoft.qrperson.model.person)arguments[0],
 				(com.liferay.portal.service.ServiceContext)arguments[1]);
 		}
 
 		if (_methodName62.equals(name) &&
 				Arrays.deepEquals(_methodParameterTypes62, parameterTypes)) {
-			personLocalServiceUtil.deletepersonEntry((org.xmlportletfactory.tnsoft.qrperson.model.person)arguments[0]);
-
-			return null;
-		}
-
-		if (_methodName63.equals(name) &&
-				Arrays.deepEquals(_methodParameterTypes63, parameterTypes)) {
-			personLocalServiceUtil.addEntryResources((org.xmlportletfactory.tnsoft.qrperson.model.person)arguments[0],
-				((Boolean)arguments[1]).booleanValue(),
-				((Boolean)arguments[2]).booleanValue());
-
-			return null;
+			return personLocalServiceUtil.updateperson((org.xmlportletfactory.tnsoft.qrperson.model.person)arguments[0],
+				(com.liferay.portal.service.ServiceContext)arguments[1]);
 		}
 
 		if (_methodName64.equals(name) &&
 				Arrays.deepEquals(_methodParameterTypes64, parameterTypes)) {
-			personLocalServiceUtil.addEntryResources((org.xmlportletfactory.tnsoft.qrperson.model.person)arguments[0],
-				(java.lang.String[])arguments[1],
-				(java.lang.String[])arguments[2]);
+			personLocalServiceUtil.deletepersonEntry((org.xmlportletfactory.tnsoft.qrperson.model.person)arguments[0]);
 
 			return null;
 		}
 
 		if (_methodName65.equals(name) &&
 				Arrays.deepEquals(_methodParameterTypes65, parameterTypes)) {
-			personLocalServiceUtil.addEntryResources(((Long)arguments[0]).longValue(),
+			personLocalServiceUtil.addEntryResources((org.xmlportletfactory.tnsoft.qrperson.model.person)arguments[0],
 				((Boolean)arguments[1]).booleanValue(),
 				((Boolean)arguments[2]).booleanValue());
 
@@ -490,7 +472,7 @@ public class personLocalServiceClpInvoker {
 
 		if (_methodName66.equals(name) &&
 				Arrays.deepEquals(_methodParameterTypes66, parameterTypes)) {
-			personLocalServiceUtil.addEntryResources(((Long)arguments[0]).longValue(),
+			personLocalServiceUtil.addEntryResources((org.xmlportletfactory.tnsoft.qrperson.model.person)arguments[0],
 				(java.lang.String[])arguments[1],
 				(java.lang.String[])arguments[2]);
 
@@ -499,6 +481,24 @@ public class personLocalServiceClpInvoker {
 
 		if (_methodName67.equals(name) &&
 				Arrays.deepEquals(_methodParameterTypes67, parameterTypes)) {
+			personLocalServiceUtil.addEntryResources(((Long)arguments[0]).longValue(),
+				((Boolean)arguments[1]).booleanValue(),
+				((Boolean)arguments[2]).booleanValue());
+
+			return null;
+		}
+
+		if (_methodName68.equals(name) &&
+				Arrays.deepEquals(_methodParameterTypes68, parameterTypes)) {
+			personLocalServiceUtil.addEntryResources(((Long)arguments[0]).longValue(),
+				(java.lang.String[])arguments[1],
+				(java.lang.String[])arguments[2]);
+
+			return null;
+		}
+
+		if (_methodName69.equals(name) &&
+				Arrays.deepEquals(_methodParameterTypes69, parameterTypes)) {
 			personLocalServiceUtil.updateEntryResources((org.xmlportletfactory.tnsoft.qrperson.model.person)arguments[0],
 				(java.lang.String[])arguments[1],
 				(java.lang.String[])arguments[2]);
@@ -541,14 +541,10 @@ public class personLocalServiceClpInvoker {
 	private String[] _methodParameterTypes14;
 	private String _methodName15;
 	private String[] _methodParameterTypes15;
-	private String _methodName38;
-	private String[] _methodParameterTypes38;
-	private String _methodName39;
-	private String[] _methodParameterTypes39;
-	private String _methodName44;
-	private String[] _methodParameterTypes44;
-	private String _methodName45;
-	private String[] _methodParameterTypes45;
+	private String _methodName40;
+	private String[] _methodParameterTypes40;
+	private String _methodName41;
+	private String[] _methodParameterTypes41;
 	private String _methodName46;
 	private String[] _methodParameterTypes46;
 	private String _methodName47;
@@ -579,10 +575,10 @@ public class personLocalServiceClpInvoker {
 	private String[] _methodParameterTypes59;
 	private String _methodName60;
 	private String[] _methodParameterTypes60;
+	private String _methodName61;
+	private String[] _methodParameterTypes61;
 	private String _methodName62;
 	private String[] _methodParameterTypes62;
-	private String _methodName63;
-	private String[] _methodParameterTypes63;
 	private String _methodName64;
 	private String[] _methodParameterTypes64;
 	private String _methodName65;
@@ -591,4 +587,8 @@ public class personLocalServiceClpInvoker {
 	private String[] _methodParameterTypes66;
 	private String _methodName67;
 	private String[] _methodParameterTypes67;
+	private String _methodName68;
+	private String[] _methodParameterTypes68;
+	private String _methodName69;
+	private String[] _methodParameterTypes69;
 }

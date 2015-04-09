@@ -2,5 +2,6 @@
 
 <beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" default-destroy-method="destroy" default-init-method="afterPropertiesSet" xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
 	<bean id="org.xmlportletfactory.tnsoft.qrperson.service.personLocalService" class="org.xmlportletfactory.tnsoft.qrperson.service.impl.personLocalServiceImpl" />
+	<bean id="org.xmlportletfactory.tnsoft.qrperson.service.personService" class="org.xmlportletfactory.tnsoft.qrperson.service.impl.personServiceImpl" />
 	<bean id="org.xmlportletfactory.tnsoft.qrperson.service.persistence.personPersistence" class="org.xmlportletfactory.tnsoft.qrperson.service.persistence.personPersistenceImpl" parent="basePersistence" />
 </beans>

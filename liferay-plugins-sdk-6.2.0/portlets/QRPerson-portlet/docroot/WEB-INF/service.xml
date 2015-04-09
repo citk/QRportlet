@@ -3,7 +3,7 @@
 <service-builder package-path="org.xmlportletfactory.tnsoft.qrperson">
 	<author>Jack A. Rider</author>
 	<namespace>qrperson</namespace>
-	<entity name="person" local-service="true" remote-service="false" uuid="false" trash-enabled="false">
+	<entity name="person" local-service="true" remote-service="true" uuid="false" trash-enabled="false">
 		<!-- Primary key column -->
 		<column name="kundeId" type="long" primary="true" />
 

@@ -16,6 +16,7 @@ package org.xmlportletfactory.tnsoft.qrperson.model.impl;
 
 import com.liferay.portal.kernel.bean.AutoEscapeBeanHandler;
 import com.liferay.portal.kernel.exception.SystemException;
+import com.liferay.portal.kernel.json.JSON;
 import com.liferay.portal.kernel.util.GetterUtil;
 import com.liferay.portal.kernel.util.ProxyUtil;
 import com.liferay.portal.kernel.util.StringBundler;
@@ -30,13 +31,16 @@ import com.liferay.portlet.expando.util.ExpandoBridgeFactoryUtil;
 
 import org.xmlportletfactory.tnsoft.qrperson.model.person;
 import org.xmlportletfactory.tnsoft.qrperson.model.personModel;
+import org.xmlportletfactory.tnsoft.qrperson.model.personSoap;
 
 import java.io.Serializable;
 
 import java.sql.Types;
 
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 /**
@@ -52,6 +56,7 @@ import java.util.Map;
  * @see org.xmlportletfactory.tnsoft.qrperson.model.personModel
  * @generated
  */
+@JSON(strict = true)
 public class personModelImpl extends BaseModelImpl<person>
 	implements personModel {
 	/*
@@ -97,6 +102,59 @@ public class personModelImpl extends BaseModelImpl<person>
 	public static long GROUPID_COLUMN_BITMASK = 2L;
 	public static long USERID_COLUMN_BITMASK = 4L;
 	public static long KUNDEID_COLUMN_BITMASK = 8L;
+
+	/**
+	 * Converts the soap model instance into a normal model instance.
+	 *
+	 * @param soapModel the soap model instance to convert
+	 * @return the normal model instance
+	 */
+	public static person toModel(personSoap soapModel) {
+		if (soapModel == null) {
+			return null;
+		}
+
+		person model = new personImpl();
+
+		model.setKundeId(soapModel.getKundeId());
+		model.setCompanyId(soapModel.getCompanyId());
+		model.setGroupId(soapModel.getGroupId());
+		model.setUserId(soapModel.getUserId());
+		model.setUserName(soapModel.getUserName());
+		model.setCreateDate(soapModel.getCreateDate());
+		model.setModifiedDate(soapModel.getModifiedDate());
+		model.setFirstname(soapModel.getFirstname());
+		model.setMiddlename(soapModel.getMiddlename());
+		model.setLastname(soapModel.getLastname());
+		model.setKundeDescription(soapModel.getKundeDescription());
+		model.setUserDocument(soapModel.getUserDocument());
+		model.setCity(soapModel.getCity());
+		model.setUserEmail(soapModel.getUserEmail());
+		model.setFolderDLId(soapModel.getFolderDLId());
+
+		return model;
+	}
+
+	/**
+	 * Converts the soap model instances into normal model instances.
+	 *
+	 * @param soapModels the soap model instances to convert
+	 * @return the normal model instances
+	 */
+	public static List<person> toModels(personSoap[] soapModels) {
+		if (soapModels == null) {
+			return null;
+		}
+
+		List<person> models = new ArrayList<person>(soapModels.length);
+
+		for (personSoap soapModel : soapModels) {
+			models.add(toModel(soapModel));
+		}
+
+		return models;
+	}
+
 	public static final long LOCK_EXPIRATION_TIME = GetterUtil.getLong(com.liferay.util.service.ServiceProps.get(
 				"lock.expiration.time.org.xmlportletfactory.tnsoft.qrperson.model.person"));
 
@@ -249,6 +307,7 @@ public class personModelImpl extends BaseModelImpl<person>
 		}
 	}
 
+	@JSON
 	@Override
 	public long getKundeId() {
 		return _kundeId;
@@ -259,6 +318,7 @@ public class personModelImpl extends BaseModelImpl<person>
 		_kundeId = kundeId;
 	}
 
+	@JSON
 	@Override
 	public long getCompanyId() {
 		return _companyId;
@@ -281,6 +341,7 @@ public class personModelImpl extends BaseModelImpl<person>
 		return _originalCompanyId;
 	}
 
+	@JSON
 	@Override
 	public long getGroupId() {
 		return _groupId;
@@ -303,6 +364,7 @@ public class personModelImpl extends BaseModelImpl<person>
 		return _originalGroupId;
 	}
 
+	@JSON
 	@Override
 	public long getUserId() {
 		return _userId;
@@ -335,6 +397,7 @@ public class personModelImpl extends BaseModelImpl<person>
 		return _originalUserId;
 	}
 
+	@JSON
 	@Override
 	public String getUserName() {
 		if (_userName == null) {
@@ -350,6 +413,7 @@ public class personModelImpl extends BaseModelImpl<person>
 		_userName = userName;
 	}
 
+	@JSON
 	@Override
 	public Date getCreateDate() {
 		return _createDate;
@@ -360,6 +424,7 @@ public class personModelImpl extends BaseModelImpl<person>
 		_createDate = createDate;
 	}
 
+	@JSON
 	@Override
 	public Date getModifiedDate() {
 		return _modifiedDate;
@@ -370,6 +435,7 @@ public class personModelImpl extends BaseModelImpl<person>
 		_modifiedDate = modifiedDate;
 	}
 
+	@JSON
 	@Override
 	public String getFirstname() {
 		if (_Firstname == null) {
@@ -385,6 +451,7 @@ public class personModelImpl extends BaseModelImpl<person>
 		_Firstname = Firstname;
 	}
 
+	@JSON
 	@Override
 	public String getMiddlename() {
 		if (_Middlename == null) {
@@ -400,6 +467,7 @@ public class personModelImpl extends BaseModelImpl<person>
 		_Middlename = Middlename;
 	}
 
+	@JSON
 	@Override
 	public String getLastname() {
 		if (_Lastname == null) {
@@ -415,6 +483,7 @@ public class personModelImpl extends BaseModelImpl<person>
 		_Lastname = Lastname;
 	}
 
+	@JSON
 	@Override
 	public String getKundeDescription() {
 		if (_kundeDescription == null) {
@@ -430,6 +499,7 @@ public class personModelImpl extends BaseModelImpl<person>
 		_kundeDescription = kundeDescription;
 	}
 
+	@JSON
 	@Override
 	public long getUserDocument() {
 		return _userDocument;
@@ -440,6 +510,7 @@ public class personModelImpl extends BaseModelImpl<person>
 		_userDocument = userDocument;
 	}
 
+	@JSON
 	@Override
 	public String getCity() {
 		if (_City == null) {
@@ -455,6 +526,7 @@ public class personModelImpl extends BaseModelImpl<person>
 		_City = City;
 	}
 
+	@JSON
 	@Override
 	public String getUserEmail() {
 		if (_userEmail == null) {
@@ -470,6 +542,7 @@ public class personModelImpl extends BaseModelImpl<person>
 		_userEmail = userEmail;
 	}
 
+	@JSON
 	@Override
 	public long getFolderDLId() {
 		return _folderDLId;
