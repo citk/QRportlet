@@ -1,0 +1,100 @@
+#set( $classDef_name = $application.getClassDef().getName())
+#set( $classInstance = $classDef_name.substring(0,1).toLowerCase() + $classDef_name.substring(1))
+#set( $fileDef_name = $application.getFileDef().getName())
+#set( $packageBase = "org.xmlportletfactory")
+#set( $pathBase = "org/xmlportletfactory")
+#set ($addmode="true")
+#if(${application.getClassDef().isSetMode()}=="true")
+#set ($addmode=${application.getClassDef().getMode().getAdd()})
+#end
+#set ($browsemode="true")
+#if(${application.getClassDef().isSetMode()}=="true")
+#set ($browsemode=${application.getClassDef().getMode().getBrowse()})
+#end
+#set ($deletemode="true")
+#if(${application.getClassDef().isSetMode()}=="true")
+#set ($deletemode=${application.getClassDef().getMode().getDelete()})
+#end
+#set ($filtermode="false")
+#set ($fields = $application.getFileDef().getFields().getFieldArray())
+#foreach($field in $fields)
+#set($tipoCampo = ${field.getType().getDomNode().getChildNodes().item(1).getLocalName()})
+#if(${tipoCampo}=="varchar")
+#if (${field.getType().getVarchar().getFilter()} == "true")
+#set ($filtermode="true")
+#end
+#end
+#end
+#set ($hasWorkflow=false)
+#if ($application.getClassDef().isSetWorkflow())
+#if ($application.getClassDef().getWorkflow() == "true")
+#set ($hasWorkflow=true)
+#end
+#end
+#set ($generateActivity=false)
+#if ($application.getClassDef().isSetGenerateActivity())
+#if ($application.getClassDef().getGenerateActivity() == "true")
+#set ($generateActivity=true)
+#end
+#end
+#set ($asset=false)
+#set ($hasTrash=false)
+#if ($application.getClassDef().isSetTrash())
+#if ($application.getClassDef().getTrash() == "true")
+#set ($hasWorkflow=true)
+#set ($asset=true)
+#set ($hasTrash=true)
+#end
+#end
+#set ($assetTitleField="")
+#set ($assetSummaryField="")
+#set ($assetTitleExist=false)
+#set ($assetSummaryExist=false)
+#set ($assetRatings=false)
+#set ($assetCategories=false)
+#set ($assetTags=false)
+#set ($assetDiscussion=false)
+#set ($assetRelated=false)
+#set ($assetFullContentField="")
+#if ($application.getClassDef().isSetAsset())
+#set ($asset=true)
+#end
+#if ($asset)
+#set ($assetTitleField=${application.getClassDef().getAsset().getAssetTitleFieldName()})
+#set ($assetSummaryField=${application.getClassDef().getAsset().getAssetSummaryFieldName()})
+#set ($assetFullContentField=${application.getClassDef().getAsset().getFullContentFieldName()})
+#if (${application.getClassDef().getAsset().getRatings()}=="true")
+#set ($assetRatings=true)
+#end
+#if (${application.getClassDef().getAsset().getCategories()}=="true")
+#set ($assetCategories=true)
+#end
+#if (${application.getClassDef().getAsset().getTags()}=="true")
+#set ($assetTags=true)
+#end
+#if (${application.getClassDef().getAsset().getDiscussion()}=="true")
+#set ($assetDiscussion=true)
+#end
+#if (${application.getClassDef().getAsset().getRelatedAssets()}=="true")
+#set ($assetRelated=true)
+#end
+#if ($assetTitleField=="")
+#set ($assetTitleField="title")
+#end
+#if ($assetSummaryField=="")
+#set ($assetSummaryField="description")
+#end
+#if ($assetFullContentField=="")
+#set ($assetFullContentField=$assetSummaryField)
+#end
+#end
+#set ($fields = $application.getFileDef().getFields().getFieldArray())
+#foreach($field in $fields)
+#set ($nombreCampo = ${field.getName()})
+#if($nombreCampo == $assetTitleField)
+#set ($assetTitleExist=true)
+#end		
+#if($nombreCampo == $assetSummaryField)
+#set ($assetSummaryExist=true)
+#end
+#end

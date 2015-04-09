@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="portal-service-home">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../../../liferay/liferay-portal-6.2-ee-sp3/tomcat-7.0.42/lib/ext/portal-service.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

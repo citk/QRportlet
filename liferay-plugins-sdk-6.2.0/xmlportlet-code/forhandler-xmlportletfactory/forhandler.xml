@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definition xmlns="http://www.xmlportletfactory.org/xml/xmlportletfactory"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.xmlportletfactory.org/xml/xmlportletfactory xmlportletfactory.xsd">
+	<commonData>
+		<client>Bil</client>
+		<projectName>Forhandler</projectName>
+		<version>1</version>
+	</commonData>
+	<applications>
+		<!-- Forhandler Portlet Class and File definition -->
+		<application>
+			<classDef>
+				<name>forhandler</name>
+				<title>forhandler</title>
+				<restrictBy>
+					<userId>false</userId>
+				</restrictBy>
+			</classDef>
+			<fileDef>
+				<name>forhandler</name>
+				<fields>
+					<field>
+						<name>forhandlerId</name>
+						<title>forhandler Id</title>
+						<type>
+							<long>
+								<length>5</length>
+								<signed>false</signed>
+								<nullable>false</nullable>
+							</long>
+						</type>
+						<showFieldInView>false</showFieldInView>
+					</field>
+					<field>
+						<name>forhandlerNavn</name>
+						<title>forhandler navn</title>
+						<type>
+							<varchar>
+								<length>100</length><filter>true</filter><order>true</order>
+							</varchar>
+						</type>
+						<showFieldInView>true</showFieldInView>
+						<required>true</required>
+					</field>
+
+					<field>
+						<name>audi</name>
+						<title>Audi</title>
+						<type>
+							<boolean />
+						</type>
+						<showFieldInView>true</showFieldInView>
+					</field>
+					<field>
+						<name>skoda</name>
+						<title>Skoda</title>
+						<type>
+							<boolean />
+						</type>
+						<showFieldInView>true</showFieldInView>
+					</field>
+					<field>
+						<name>volkswagen</name>
+						<title>Volkswagen</title>
+						<type>
+							<boolean />
+						</type>
+						<showFieldInView>true</showFieldInView>
+					</field>
+					<field>
+						<name>volkswagenNV</name>
+						<title>Volkswagen Nyttekjøretøy</title>
+						<type>
+							<boolean />
+						</type>
+						<showFieldInView>true</showFieldInView>
+					</field>
+
+					<field>
+						<name>region</name>
+						<title>Region</title>
+						<type>
+							<varchar>
+								<length>50</length>
+								<filter>true</filter>
+								<order>true</order>
+							</varchar>
+						</type>
+						<showFieldInView>true</showFieldInView>
+						<required>true</required>
+					</field>
+
+					<field>
+						<name>telefon</name>
+						<title>Telefon</title>
+						<type>
+							<varchar>
+								<length>50</length>
+								<filter>true</filter>
+								<order>false</order>
+							</varchar>
+						</type>
+						<showFieldInView>true</showFieldInView>
+						<required>false</required>
+					</field>
+
+					<field>
+						<name>epost</name>
+						<title>Epost</title>
+						<type>
+							<varchar>
+								<length>50</length>
+								<filter>true</filter>
+								<order>true</order>
+							</varchar>
+						</type>
+						<showFieldInView>true</showFieldInView>
+						<required>false</required>
+					</field>
+
+					<field>
+						<name>openingHours</name>
+						<title>Åpningstider</title>
+						<type>
+							<varchar>
+								<length>50</length>
+								<filter>false</filter>
+								<order>false</order>
+							</varchar>
+						</type>
+						<showFieldInView>true</showFieldInView>
+						<required>false</required>
+					</field>
+
+					<field>
+						<name>adresse</name>
+						<title>Adresse</title>
+						<type>
+							<text />
+						</type>
+						<showFieldInView>true</showFieldInView>
+						<required>true</required>
+					</field>
+
+				</fields>
+			</fileDef>
+		</application>
+
+	</applications>
+</definition>

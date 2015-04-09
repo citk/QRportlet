@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AntConfiguration">
+    <buildFile url="file://$PROJECT_DIR$/themes/audi-theme/build.xml" />
+    <buildFile url="file://$PROJECT_DIR$/portlets/Bestilling-portlet/build.xml" />
+    <buildFile url="file://$PROJECT_DIR$/themes/moller-theme/build.xml" />
+    <buildFile url="file://$PROJECT_DIR$/themes/skoda-theme/build.xml" />
+    <buildFile url="file://$PROJECT_DIR$/themes/vw-theme/build.xml" />
+    <buildFile url="file://$PROJECT_DIR$/layouttpl/build.xml" />
+    <buildFile url="file://$PROJECT_DIR$/themes/generic-theme/build.xml" />
+  </component>
+</project>
+

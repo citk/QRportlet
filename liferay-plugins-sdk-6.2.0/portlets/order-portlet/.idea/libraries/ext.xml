@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="ext">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/../../../../../../liferay-app/tomcat-7.0.42/lib/ext" />
+      <root url="file://$PROJECT_DIR$/../../../../../../liferay-app/tomcat-7.0.42/lib" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+    <jarDirectory url="file://$PROJECT_DIR$/../../../../../../liferay-app/tomcat-7.0.42/lib" recursive="false" />
+    <jarDirectory url="file://$PROJECT_DIR$/../../../../../../liferay-app/tomcat-7.0.42/lib/ext" recursive="false" />
+  </library>
+</component>

@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="portlet">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../../../liferay/installs/portal/liferay-portal-6.2.10.1-ee-ga1-default/tomcat-7.0.42/lib/ext/portlet.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

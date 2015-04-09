@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="servlet-api-home">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../../../liferay/liferay-portal-6.2-ee-sp3/tomcat-7.0.42/lib/servlet-api.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

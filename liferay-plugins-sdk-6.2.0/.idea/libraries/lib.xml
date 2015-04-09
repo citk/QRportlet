@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="lib">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/../../../liferay/installs/portal/liferay-portal-6.2.10.1-ee-ga1-default/tomcat-7.0.42/webapps/ROOT/WEB-INF/lib" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="file://$PROJECT_DIR$/../../../liferay/installs/portal/liferay-portal-6.2.10.1-ee-ga1-default/tomcat-7.0.42/webapps/ROOT/WEB-INF/lib" />
+    </SOURCES>
+    <jarDirectory url="file://$PROJECT_DIR$/../../../liferay/installs/portal/liferay-portal-6.2.10.1-ee-ga1-default/tomcat-7.0.42/webapps/ROOT/WEB-INF/lib" recursive="false" />
+    <jarDirectory url="file://$PROJECT_DIR$/../../../liferay/installs/portal/liferay-portal-6.2.10.1-ee-ga1-default/tomcat-7.0.42/webapps/ROOT/WEB-INF/lib" recursive="false" type="SOURCES" />
+  </library>
+</component>

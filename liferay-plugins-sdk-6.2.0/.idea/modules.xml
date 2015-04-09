@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/portlets/Bestilling-portlet/Bestilling-portlet.iml" filepath="$PROJECT_DIR$/portlets/Bestilling-portlet/Bestilling-portlet.iml" />
+      <module fileurl="file://$PROJECT_DIR$/themes/audi-theme/audi-theme.iml" filepath="$PROJECT_DIR$/themes/audi-theme/audi-theme.iml" />
+      <module fileurl="file://$PROJECT_DIR$/portlets/kunde-portlet/kunde-portlet.iml" filepath="$PROJECT_DIR$/portlets/kunde-portlet/kunde-portlet.iml" />
+      <module fileurl="file://$PROJECT_DIR$/liferay-plugins-sdk-6.2.0.iml" filepath="$PROJECT_DIR$/liferay-plugins-sdk-6.2.0.iml" />
+      <module fileurl="file://$PROJECT_DIR$/themes/moller-theme/moller-theme.iml" filepath="$PROJECT_DIR$/themes/moller-theme/moller-theme.iml" />
+      <module fileurl="file://$PROJECT_DIR$/webs/resources-importer-web/resources-importer-web-master.iml" filepath="$PROJECT_DIR$/webs/resources-importer-web/resources-importer-web-master.iml" />
+      <module fileurl="file://$PROJECT_DIR$/themes/skoda-theme/skoda-theme.iml" filepath="$PROJECT_DIR$/themes/skoda-theme/skoda-theme.iml" />
+      <module fileurl="file://$PROJECT_DIR$/themes/vw-theme/vw-theme.iml" filepath="$PROJECT_DIR$/themes/vw-theme/vw-theme.iml" />
+    </modules>
+  </component>
+</project>
+

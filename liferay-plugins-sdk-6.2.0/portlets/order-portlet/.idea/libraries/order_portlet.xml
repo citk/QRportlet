@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="order-portlet">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="file://$PROJECT_DIR$/docroot/WEB-INF/service" />
+      <root url="file://$PROJECT_DIR$/docroot/WEB-INF/src" />
+    </SOURCES>
+  </library>
+</component>
